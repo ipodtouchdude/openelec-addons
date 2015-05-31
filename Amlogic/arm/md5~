@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'digest'
+
+  digest= Digest::MD5.hexdigest(addons_file_content)
+  File.open('addons.xml.md5', 'w') {|f| f.write(digest)}
+end
