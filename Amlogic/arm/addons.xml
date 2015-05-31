@@ -2385,6 +2385,32 @@
   </extension>
 </addon>
 
+<addon id="service.multimedia.boblightd"
+       name="boblightd"
+       version="6.0.0"
+       provider-name="openelec.tv">
+  <requires>
+    <import addon="os.openelec.tv" version="6.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>boblightd: an ambilight controller.</summary>
+    <description>
+Boblight's main purpose is to create light effects from an external input, such as a video stream.
+
+See this thread on the Openelec forums for howto and demonstration: http://bit.ly/oe-boblight
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon
   id="pvr.pctv"
   version="0.1.7"
